@@ -9,18 +9,6 @@ import java.util.*;
  * @Description TODO
  */
 public class LinkedListAlgorithm {
-    public static class Node {
-        int data;
-        Node next;
-        Node(int data) {
-            this.data = data;
-        }
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
     /**
      * 反转链表
      *
@@ -37,29 +25,6 @@ public class LinkedListAlgorithm {
             curr = next;
         }
         return pre;
-    }
-
-    /**
-     * 检测环
-     *
-     * @param list
-     * @return
-     * @see <a href="https://leetcode-cn.com/problems/linked-list-cycle/submissions/"></a>
-     */
-    public static boolean checkCircle(Node list) {
-        if (list == null) {
-            return false;
-        }
-        Node fast = list;
-        Node slow = list;
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            slow = slow.next;
-            if (slow == fast) {
-                return true;
-            }
-        }
-        return false;
     }
 
     /**
@@ -141,35 +106,6 @@ public class LinkedListAlgorithm {
         return mergeTwoSortNode(mergeKSortNode(first), mergeKSortNode(second));
     }
 
-    /**
-     * 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null
-     *
-     * @param head
-     * @return
-     * @see <a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/"></a>
-     */
-    public Node detectCycle(Node head) {
-        Node fast = head;
-        Node slow = head;
-        boolean hasCycle = false;
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            slow = slow.next;
-            if (slow == fast) {
-                hasCycle = true;
-                break;
-            }
-        }
-        if (hasCycle) {
-            Node temp = head;
-            while (temp != slow) {
-                slow = slow.next;
-                temp = temp.next;
-            }
-            return temp;
-        } else {
-            return null;
-        }
-    }
+
 
 }
