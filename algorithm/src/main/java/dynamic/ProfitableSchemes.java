@@ -55,6 +55,7 @@ public class ProfitableSchemes {
     /**
      * 动态规划化简
      * {@link ProfitableSchemes#profitableSchemes1(int, int, int[], int[])}
+     *
      * @param n
      * @param minProfit
      * @param group
