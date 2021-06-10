@@ -5,7 +5,7 @@ package dynamic;
  * @createDate 2021/6/10
  * @Description 给定不同面额的硬币和一个总金额。写出函数来计算可以凑成总金额的硬币组合数。假设每一种面额的硬币有无限个
  */
-public class CoinChangeII {
+public class CoinChange {
     /**
      * 想复杂了，用dp[i][j]表示i种硬币达到金额j的方案数
      * @param amount
