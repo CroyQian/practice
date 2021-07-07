@@ -8,14 +8,14 @@ import java.util.regex.Pattern;
  */
 public class StringReplaceUtils {
     public static String filter(String str) {
-        String regEx = "[`~!@#$%^&*()\\-+={}':;,\\[\\].<>/?￥%…（）_+|【】‘；：”“’。，、？！\\s]";
+        String regEx = "[`~!@#$%^&*()\\-+={}':;,\\[\\].<>/?￥%…（）_+|【】‘；：”“’。，、？！？a-zA-Z0-9 \\s]";
         Pattern p = Pattern.compile(regEx);
         Matcher m = p.matcher(str);
         return m.replaceAll("").trim();
     }
 
     public static void main(String[] args) {
-        String a = "你好[{+}]【】!@#$%^&*！@#￥%……&*（）";
+        String a = "“红船”《武汉1927》演出票";
         a = a.replaceAll("\\+\\!","");
         System.out.println(a);
         String reg = "好";
