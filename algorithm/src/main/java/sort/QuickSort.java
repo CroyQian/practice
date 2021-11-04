@@ -3,7 +3,7 @@ package sort;
 /**
  * @author Croy Qian
  * @createDate 2021/4/13
- * @Description TODO
+ * @Description 快排
  */
 public class QuickSort {
     private static void quickSort(int[] a, int start, int end) {
@@ -20,10 +20,10 @@ public class QuickSort {
         int i = p;
         int j = r;
         while (i < j) {
-            while(i<j && a[j] > soldier) {
+            while (i < j && a[j] > soldier) {
                 j--;
             }
-            while(i < j && a[i] <= soldier) {
+            while (i < j && a[i] <= soldier) {
                 i++;
             }
             int temp = a[i];
@@ -36,8 +36,11 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int a[] = new int[]{5,1,1,2,0,0};
-        partition(a, 0 ,a.length -1);
-        quickSort(a, 0 ,a.length -1);
+        int a[] = new int[] { 5, 1, 1, 2, 0, 0 };
+        partition(a, 0, a.length - 1);
+        quickSort(a, 0, a.length - 1);
+        for (int num : a) {
+            System.out.print(num + " ");
+        }
     }
 }
