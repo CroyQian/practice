@@ -1,4 +1,4 @@
-package dynamic;
+package dynamicPlan;
 
 /**
  * @author Croy Qian

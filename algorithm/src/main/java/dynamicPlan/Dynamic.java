@@ -1,6 +1,4 @@
-package dynamic;
-
-import java.util.*;
+package dynamicPlan;
 
 /**
  * @author Croy Qian
