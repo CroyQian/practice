@@ -55,10 +55,10 @@ public class SubStrByteUtils {
     }
 
     public static void main(String[] args) {
-        String a = "计费周期:201811;号码:18926155229;其中预付金:100.00元;付款流水号:170000021550625;合同总金额210427元，其中设备终端费124171元(一次付清），通信费86256元，通信费分三期付，每期付28752元，本次为第二期付款";
+        String a = "你好";
         System.out.println(a.length());
         System.out.println(lengthByte(a));
-        System.out.println(substrByte(a, 200));
-        System.out.println(substrByte(a, 130));
+        System.out.println(substrByte(a, 2));
+        System.out.println(substrByte(a, 4));
     }
 }
