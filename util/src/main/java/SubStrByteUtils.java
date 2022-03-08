@@ -55,10 +55,10 @@ public class SubStrByteUtils {
     }
 
     public static void main(String[] args) {
-        String a = "你好";
+        String a = "代表号码：ADSLD2560301424；计费账期：202106；备注：光纤调测费100元/点，月租费75元/点（宽带月租50元/点+天翼看家25元/点）共计51个点，合计6879.82，其中月租费按天数折算";
         System.out.println(a.length());
         System.out.println(lengthByte(a));
-        System.out.println(substrByte(a, 2));
-        System.out.println(substrByte(a, 4));
+        System.out.println(substrByte(a, 200));
+        System.out.println(substrByte(a, 160));
     }
 }
