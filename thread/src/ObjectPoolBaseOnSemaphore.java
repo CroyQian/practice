@@ -26,6 +26,7 @@ public class ObjectPoolBaseOnSemaphore<T,R> {
         T t = null;
         semaphore.acquire();
         try{
+            //为了体现出效果，等待2秒
             TimeUnit.SECONDS.sleep(2);
             t = pool.remove(0);
             return function.apply(t);
