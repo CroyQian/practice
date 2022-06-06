@@ -21,6 +21,7 @@ public class DependencyInjection {
         System.out.println(userRepository.getUsers());
         //2.内建依赖（不是springbean）
         System.out.println(userRepository.getBeanFactory());
+        //注入的BeanFactory和获取的BeanFactory不是同一个，注入的BeanFactory是AbstractApplicationContext的DefaultListableBeanFactory
         System.out.println(userRepository.getBeanFactory() == beanFactory);
         System.out.println(userRepository.getUserObjectFactory().getObject());
         ObjectFactory applicationContextObjectFactory = userRepository.getApplicationContextObjectFactory();
