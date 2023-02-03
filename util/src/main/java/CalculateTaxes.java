@@ -26,5 +26,11 @@ public class CalculateTaxes {
 //        System.out.println(decimalFormat.format(amountYuan - taxAmountYuan));
 //        System.out.println(decimalFormat.format(new BigDecimal(94005.28d).doubleValue()));
         System.out.println(decimalFormat.format(new BigDecimal(755900.04d).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()));
+        System.out.println((long)(calculateTaxes2(3000d, 0.06d) + 0.5));
+
+        String a = "0999-90-09";
+        System.out.println(a.matches("^[0-9]*$"));
+        System.out.println(a.matches("^[1-9]([0-9]{3})-[0-9]{2}-[0-9]{2}"));
+        System.out.println(a.matches("[a-zA-Z]{4}"));
     }
 }
