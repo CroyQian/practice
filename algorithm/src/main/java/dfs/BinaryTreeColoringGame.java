@@ -1,7 +1,5 @@
 package dfs;
 
-import sun.reflect.generics.tree.Tree;
-
 /**
  * 二叉树着色游戏
  * @author Croy Qian
