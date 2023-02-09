@@ -1,3 +1,5 @@
+package semaphore;
+
 import java.util.List;
 import java.util.Vector;
 import java.util.concurrent.Semaphore;
