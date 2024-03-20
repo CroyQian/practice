@@ -48,10 +48,10 @@ public class GetAuthToken {
     }
 
     public static void main(String[] args) {
-        System.out.println("请输入get生成token");
+        System.out.println("请输入g生成token");
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            if (scanner.nextLine().equals("get")) {
+            if (scanner.nextLine().equals("g")) {
                 String echoStr = UUID.randomUUID().toString();
                 System.out.println("uuid=" + echoStr);
                 String date = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
